@@ -2,7 +2,13 @@ package Bai11;
 
 import java.util.HashSet;
 
-public class Set {
+public class HashSett {
+    public static void HienThi(HashSet set){
+        for (Object x:set){
+            System.out.print(x+" ");
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
         /*
         Java cung cấp 3 lớp:HashSet, LinkedHashSet, TreeSet
@@ -27,9 +33,13 @@ public class Set {
         set.add(1);
         set.add(2);
         set.add(5);
-        for (int x:set){
-            System.out.print(x+" ");
-        }
+        HienThi(set);
+
+        set.remove(1);
+        HienThi(set);
+
+
+
 
     }
 }
