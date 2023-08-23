@@ -63,10 +63,11 @@ public class Student {
         System.out.print("Birth Year: ");
         birthYear = sc.nextInt();
         sc.nextLine();
+        System.out.print("address");
         address = sc.nextLine();
 
     }
     public void output(){
-        
+
     }
 }
